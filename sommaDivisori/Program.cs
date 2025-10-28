@@ -18,12 +18,12 @@
         static int Somma(int n)
         {
             int s = 0;
-            for (int i = 1; i < n; i++)
+            for (int i = 2; i < n; i++)
             {
                 if (n % i == 0)
                 {
 
-                    if (Nprimo(n) == true)
+                    if (Nprimo(i) == true)
                     {
                         s = s + i;
                     }
@@ -35,7 +35,7 @@
         {
             Console.WriteLine("inserisci un numero: ");
             int a = Convert.ToInt32 (Console.ReadLine());
-            Console.WriteLine("la somms dei divisori primi: ");
+            Console.WriteLine("la somma dei divisori primi: " + Somma(a));
         }
     }
 }
